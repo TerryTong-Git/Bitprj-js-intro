@@ -1,8 +1,10 @@
 // start coding your function here!
-function running_late (date) {
-    const sliced = date.slice(-7, -8)
 
-    if (sliced> 22) {
+function running_late (date) {
+    date = new Date(date) 
+
+
+    if (date.getHours()> 22) {
         return "It is late!"}
     else {
         return "It is still early!"
